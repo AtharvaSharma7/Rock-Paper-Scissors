@@ -1,12 +1,12 @@
 import random 
   
 print("Winning Rules of the Rock paper scissor game as follows: \n"
-                                +"Rock vs paper->paper wins \n"
+                                +"Rock vs paper->Paper wins \n"
                                 + "Rock vs scissor->Rock wins \n"
-                                +"paper vs scissor->scissor wins \n") 
+                                +"paper vs scissor->Scissor wins \n") 
   
 while True: 
-    print("Enter choice \n 1. Rock \n 2. paper \n 3. scissor \n") 
+    print("Enter choice \n 1. Rock \n 2. Paper \n 3. Scissor \n") 
       
     choice = int(input("User turn: ")) 
   
@@ -32,9 +32,9 @@ while True:
     if comp_choice == 1: 
         comp_choice_name = 'Rock'
     elif comp_choice == 2: 
-        comp_choice_name = 'paper'
+        comp_choice_name = 'Paper'
     else: 
-        comp_choice_name = 'scissor'
+        comp_choice_name = 'Scissor'
           
     print("Computer choice is: " + comp_choice_name) 
   
@@ -43,7 +43,7 @@ while True:
     if((choice == 1 and comp_choice == 2) or
       (choice == 2 and comp_choice ==1 )): 
         print("paper wins => ", end = "") 
-        result = "paper"
+        result = "Paper"
           
     elif((choice == 1 and comp_choice == 3) or
         (choice == 3 and comp_choice == 1)): 
@@ -51,7 +51,7 @@ while True:
         result = "Rock"
     else: 
         print("scissor wins =>", end = "") 
-        result = "scissor"
+        result = "Scissor"
   
     if result == choice_name: 
         print("<== User wins ==>") 
